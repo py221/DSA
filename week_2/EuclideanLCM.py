@@ -13,7 +13,7 @@ def EuclideanLCM(x, y):
     y_lst.append(y)
 
     if y == 0:
-        return x * (x_lst[0]/x) * (y_lst[0]/x)
+        return int(x * (x_lst[0]/x) * (y_lst[0]/x))
 
     if 0 in y_lst:
         x_lst = []  
