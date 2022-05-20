@@ -9,13 +9,22 @@ def EuclideanLCM(x, y):
         global y_lst
         y_lst = []
 
-    if 0 not in y_lst:
-        x_lst.append(x)
-        y_lst.append(y)
+    x_lst.append(x)
+    y_lst.append(y)
 
     if y == 0:
         return x * (x_lst[0]/x) * (y_lst[0]/x)
 
+    if 0 in y_lst:
+        x_lst = []  
+        y_lst = []
+        x_lst.append(x)
+        y_lst.append(y)
+
     return EuclideanLCM(y, x % y)
 
+# %%
+if __name__ == '__main__':
+    a, b = [int(x) for x in input().split()]
+    print(EuclideanLCM(a, b))
 # %%

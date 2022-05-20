@@ -25,7 +25,6 @@ def fib_last_digit(n):
     memo[n] = (fib_last_digit(n-1) + fib_last_digit(n-2)) % 10
     return memo[n]
 
-fib_last_digit(10)
 
 # for i in range(10):
 #     print(fib(i))
