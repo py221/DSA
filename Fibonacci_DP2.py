@@ -30,7 +30,6 @@ def fib(n):
 #     print(fib(i))
 
 # %%
-%%timeit
 if __name__ == '__main__':
     n = int(input())
     print(fib(n))
