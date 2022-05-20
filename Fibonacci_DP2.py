@@ -20,7 +20,8 @@ def fib(n):
         return 1
 
     if memo[n] != -1:
-        return memo[n]
+        return memo[n] 
+        
 
     memo[n] = fib(n-1) + fib(n-2)
     return memo[n]
